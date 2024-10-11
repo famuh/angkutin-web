@@ -1,0 +1,1 @@
+project sudah diclean, jalankan flutter build atau flutter run terlebih dahulu untuk membuat semua file yang dibutuhkan

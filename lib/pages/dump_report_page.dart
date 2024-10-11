@@ -7,17 +7,13 @@ class DumpReportPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.white),
-        useMaterial3: true,
-      ),
-      home: DefaultTabController(
+    return DefaultTabController(
         length: 2,
         child: Scaffold(
           appBar: AppBar(
-            title: const Text('Data Pengangkutan'),
-            bottom: const TabBar(
+            automaticallyImplyLeading: false,
+            bottom: const 
+            TabBar(
               tabs: [
                 Tab(text: "Laporan Timbunan"),
                 Tab(text: "Riwayat Permohonan"),
@@ -31,7 +27,7 @@ class DumpReportPage extends StatelessWidget {
             ],
           ),
         ),
-      ),
-    );
+      );
+    
   }
 }

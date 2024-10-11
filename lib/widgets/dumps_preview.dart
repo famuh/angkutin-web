@@ -1,5 +1,6 @@
 import 'package:admin_panel/services/dump_report_service.dart';
 import 'package:admin_panel/widgets/dump_percent_indicator.dart';
+import 'package:admin_panel/widgets/small_title.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
@@ -28,7 +29,7 @@ class DumpsPreview extends StatelessWidget {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  const Text('Jumlah laporan selesai'),
+                  SmallTitleSection(title: "Jumlah Laporan Selesai"),
                   space2,
                   const DumpPercentIndicator(),
                   space2,
@@ -37,10 +38,6 @@ class DumpsPreview extends StatelessWidget {
                     children: [dataDone(), dataCount()],
                   ),
                   space1,
-                  const Text(
-                    'Segera cek laporan timbunan!',
-                    textAlign: TextAlign.center,
-                  )
                 ],
               ),
             ),

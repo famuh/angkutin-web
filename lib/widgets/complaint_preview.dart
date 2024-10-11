@@ -3,6 +3,7 @@ import 'package:admin_panel/constans/space.dart';
 import 'package:admin_panel/constans/text.dart';
 import 'package:admin_panel/services/complaint_service.dart';
 import 'package:admin_panel/widgets/complaint_percent_indicator.dart';
+import 'package:admin_panel/widgets/small_title.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
@@ -29,7 +30,7 @@ class ComplaintPreview extends StatelessWidget {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    const Text('Jumlah keluhan selesai'),
+                    SmallTitleSection(title: "Jumlah Keluhan Selesai"),
                     space2,
                     const ComplaintPercentage(),
                     space2,
@@ -38,10 +39,6 @@ class ComplaintPreview extends StatelessWidget {
                       children: [dataDone(), dataCount()],
                     ),
                     space1,
-                    const Text(
-                      'Segera cek data keluhan!',
-                      textAlign: TextAlign.center,
-                    )
                   ],
                 ),
               ),

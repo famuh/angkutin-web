@@ -42,7 +42,7 @@ class _CarbageTableState extends State<CarbageTable> {
 
   Widget _requestReport() {
     return Padding(
-      padding: const EdgeInsets.all(32),
+      padding: const EdgeInsets.only(top: 16),
       child: Column(
         children: [
           Row(

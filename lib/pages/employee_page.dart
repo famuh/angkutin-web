@@ -37,12 +37,6 @@ class _EmployeePageState extends State<EmployeePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        automaticallyImplyLeading: false,
-        title: const Text(
-          'Data Petugas',
-        ),
-      ),
       body: Padding(
         padding: const EdgeInsets.all(24),
         child: Column(
